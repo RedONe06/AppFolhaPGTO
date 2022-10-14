@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppFolhaPGTO</string>
+    <string name="txtSexo">SEXO</string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+    <string name="outros">Outros</string>
+    <string name="calcular">Calcular</string>
+</resources>

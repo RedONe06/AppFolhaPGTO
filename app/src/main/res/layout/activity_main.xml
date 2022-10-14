@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo1"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Folha Pagamento" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitulo1"
+        android:hint="Nome funcionário" />
+
+    <EditText
+        android:id="@+id/edtSalarioBruto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNome"
+        android:hint="Salário bruto" />
+
+    <TextView
+        android:id="@+id/txtSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/txtSexo"
+        android:layout_below="@+id/edtSalarioBruto"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupSexo"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/txtSexo"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioFeminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feminino" />
+
+        <RadioButton
+            android:id="@+id/radioMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masculino" />
+
+        <RadioButton
+            android:id="@+id/radioOutros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/outros" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtNumeroFilhos"
+        android:layout_below="@+id/radioGroupSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nº de filhos"/>
+
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_below="@id/edtNumeroFilhos"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/calcular" />
+
+    <TextView
+        android:id="@+id/txtResultadoTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO"
+        android:layout_below="@+id/btnCalcular"/>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/txtResultadoTitulo"/>
+
+</RelativeLayout>
